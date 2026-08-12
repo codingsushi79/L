@@ -1,0 +1,19 @@
+[package]
+name = "ldoc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "ldoc"
+path = "src/main.rs"
+
+[dependencies]
+l-span.workspace = true
+l-ast.workspace = true
+l-parser.workspace = true
+l-driver.workspace = true
+l-json.workspace = true

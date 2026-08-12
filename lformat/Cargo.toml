@@ -1,0 +1,18 @@
+[package]
+name = "lformat"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "lformat"
+path = "src/main.rs"
+
+[dependencies]
+l-span.workspace = true
+l-lexer.workspace = true
+l-ast.workspace = true
+l-parser.workspace = true

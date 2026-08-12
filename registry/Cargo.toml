@@ -1,0 +1,17 @@
+[package]
+name = "l-registry"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "l-registry"
+path = "src/main.rs"
+
+[dependencies]
+l-json.workspace = true
+l-toml.workspace = true
+l-manifest.workspace = true

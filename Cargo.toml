@@ -1,0 +1,57 @@
+[workspace]
+resolver = "2"
+members = [
+    "compiler/l-span",
+    "compiler/l-lexer",
+    "compiler/l-ast",
+    "compiler/l-parser",
+    "compiler/l-resolver",
+    "compiler/l-typeck",
+    "compiler/l-hir",
+    "compiler/l-mir",
+    "compiler/l-opt",
+    "compiler/l-backend",
+    "compiler/l-driver",
+    "compiler/lc",
+    "lpm",
+    "lformat",
+    "llint",
+    "llsp",
+    "ldoc",
+    "shared/l-manifest",
+    "shared/l-toml",
+    "shared/l-json",
+    "registry",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+license = "MIT"
+repository = "https://github.com/example/L"
+
+[workspace.dependencies]
+l-span = { path = "compiler/l-span" }
+l-lexer = { path = "compiler/l-lexer" }
+l-ast = { path = "compiler/l-ast" }
+l-parser = { path = "compiler/l-parser" }
+l-resolver = { path = "compiler/l-resolver" }
+l-typeck = { path = "compiler/l-typeck" }
+l-hir = { path = "compiler/l-hir" }
+l-mir = { path = "compiler/l-mir" }
+l-opt = { path = "compiler/l-opt" }
+l-backend = { path = "compiler/l-backend" }
+l-driver = { path = "compiler/l-driver" }
+l-manifest = { path = "shared/l-manifest" }
+l-toml = { path = "shared/l-toml" }
+l-json = { path = "shared/l-json" }
+lformat = { path = "lformat" }
+llint = { path = "llint" }
+ldoc = { path = "ldoc" }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"

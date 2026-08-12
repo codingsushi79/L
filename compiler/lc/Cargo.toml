@@ -1,0 +1,17 @@
+[package]
+name = "lc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "lsc"
+path = "src/main.rs"
+
+[dependencies]
+l-span.workspace = true
+l-driver.workspace = true
+l-manifest.workspace = true

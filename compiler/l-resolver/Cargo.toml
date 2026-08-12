@@ -1,0 +1,16 @@
+[package]
+name = "l-resolver"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+l-span.workspace = true
+l-ast.workspace = true
+l-hir.workspace = true
+
+[dev-dependencies]
+l-parser.workspace = true

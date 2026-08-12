@@ -1,0 +1,1 @@
+/home/sasha/code/L/target/debug/libl_manifest.rlib: /home/sasha/code/L/shared/l-manifest/src/lib.rs /home/sasha/code/L/shared/l-manifest/src/lockfile.rs /home/sasha/code/L/shared/l-manifest/src/version.rs /home/sasha/code/L/shared/l-toml/src/lib.rs

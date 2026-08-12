@@ -1,0 +1,21 @@
+[package]
+name = "l-driver"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+l-span.workspace = true
+l-lexer.workspace = true
+l-ast.workspace = true
+l-parser.workspace = true
+l-resolver.workspace = true
+l-typeck.workspace = true
+l-hir.workspace = true
+l-mir.workspace = true
+l-opt.workspace = true
+l-backend.workspace = true
+l-manifest.workspace = true

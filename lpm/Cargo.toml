@@ -1,0 +1,22 @@
+[package]
+name = "lpm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "lpm"
+path = "src/main.rs"
+
+[dependencies]
+l-span.workspace = true
+l-driver.workspace = true
+l-manifest.workspace = true
+l-toml.workspace = true
+l-json.workspace = true
+lformat.workspace = true
+llint.workspace = true
+ldoc.workspace = true
